@@ -1,4 +1,4 @@
-module github.com/doechyeah/RaspberryGreen/myGreenApi
+module myGreenApi
 
 go 1.17
 

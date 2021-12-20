@@ -1,14 +1,20 @@
-package internal
+package endpoints
 
 import (
-	"fmt"
 	"net/http"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
+func Handler(w http.ResponseWriter, r *http.Request) {
 	// fmt.Printf(w, "Hi there")
 }
 
-func test_import() {
-	fmt.Println("Test")
-}
+/**
+<<TODO>>
+Enpoints to add:
+- GetAllDevices() #Retrive all device information from mongodb
+- GetDeviceByID() #Retrive device information by id from mongodb
+- UpdateDeviceSettings() #Take device settings struct and update the devices settings from (On Device side, will need to send acknowledgment to new setting changes)
+- RegisterNewDevice() #Register new device to user. Need to decide how to do registration
+- etc.
+
+*/

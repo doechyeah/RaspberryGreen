@@ -4,7 +4,6 @@ import (
 	"context"
 	"log"
 	"os"
-	"github.com/doechyeah/RaspberryGreen/myGreenApi/internal"
 
 	"github.com/joho/godotenv"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -29,7 +28,8 @@ func main() {
 		}
 	}()
 
-	endpoints.test_import()
+	// TODO: start HTTP server here
+
 	// coll := client.Database("sample_mflix").Collection("comments")
 	// name := "Mercedes Tyler"
 	// var result bson.M
